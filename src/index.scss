@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;700&display=swap");
+@import "./global.scss";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-main: "Mukta", Helvetica, Arial, sans-serif;
+    --c-white: white;
+    --c-light-black: rgba(0, 0, 0, 0.4);
+    --c-light-black-2: rgba(0, 0, 0, 0.65);
+    --c-light-blue: #009bff;
+    --c-gray: #f8f8f8;
+
+    --padding-top: 1.547rem;
+    --padding-right: 2.9rem;
+    --padding-bottom: 1.547rem;
+    --padding-left: 2.9rem;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--c-gray);
+    font-family: var(--font-main);
+}
+
+.page {
+    background: var(--c-white);
+
+    &__content {
+        @include padding;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 1.547rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+img {
+    width: 100%;
+}
+
+.heading-large {
+    position: relative;
+
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 2rem 0 2.75rem 0;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.75rem;
+        height: 10px;
+        width: 10%;
+
+        background: var(--c-light-blue);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 1.15rem;
+
+    a {
+        position: relative;
+        color: var(--c-light-blue);
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            height: 1px;
+            width: 0;
+
+            background: var(--c-light-blue);
+            transition: all 250ms ease;
+        }
+
+        &:hover {
+            &:before {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+
+.text-section {
+    margin-bottom: 1rem;
+}

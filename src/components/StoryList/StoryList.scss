@@ -1,0 +1,71 @@
+@import "../../global.scss";
+
+.story-list {
+    @include padding;
+
+    .story-item {
+        display: grid;
+        grid-template-columns: auto 90px;
+        grid-template-rows: auto 30px;
+        grid-template-areas:
+            "title img"
+            "date img";
+
+        margin-bottom: 1.547rem;
+
+        &__title {
+            grid-area: title;
+
+            padding-right: 1em;
+            font-size: 4vw;
+            line-height: 1.2;
+        }
+
+        &__date {
+            grid-area: date;
+
+            display: flex;
+            align-items: flex-end;
+
+            font-size: 0.8rem;
+            font-size: 2vw;
+            color: var(--c-light-black);
+            font-family: var(--font-main);
+        }
+
+        &__img {
+            grid-area: img;
+
+            width: 90px;
+            height: 90px;
+        }
+
+        &:hover {
+            .story-item__title {
+                @include story-hover;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .story-list {
+        padding: 1.547rem 3.8675rem 1.547rem 3.8675rem;
+
+        .story-item {
+            grid-template-columns: 2.75fr 1fr;
+
+            &__title {
+                font-size: 1.5rem;
+            }
+
+            &__date {
+                font-size: 0.8rem;
+            }
+
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}

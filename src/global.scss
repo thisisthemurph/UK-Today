@@ -1,0 +1,8 @@
+@mixin padding {
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
+}
+
+@mixin story-hover {
+    text-decoration: var(--c-light-blue) underline;
+    text-decoration-thickness: 2px;
+}

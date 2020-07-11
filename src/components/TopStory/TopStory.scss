@@ -1,0 +1,41 @@
+@import "../../global.scss";
+
+.top-story {
+    display: block;
+    position: relative;
+
+    &__title {
+        position: relative;
+        z-index: 1;
+        margin-top: -2em;
+        width: 92%;
+
+        padding: var(--padding-top) 1.547rem var(--padding-bottom) var(--padding-left);
+        background: var(--c-white);
+    }
+
+    &:hover {
+        .top-story__title {
+            @include story-hover;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .top-story {
+        &__img {
+            width: 65%;
+        }
+
+        &__title {
+            max-width: 45%;
+            margin: 0;
+
+            position: absolute;
+            top: var(--padding-top);
+            right: 0;
+
+            padding: 1.547rem 3.8675rem 1.547rem 1.8564rem;
+        }
+    }
+}
