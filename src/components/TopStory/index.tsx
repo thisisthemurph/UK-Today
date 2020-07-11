@@ -20,14 +20,28 @@ const TopStory: React.FC = () => {
 		})()
 	}, [])
 
-	if (story === null) return null
-
-	return (
-		<a href={story.url} className="top-story">
-			<img className="top-story__img" src={story.urlToImage} alt={story.title} />
-			<h1 className="top-story__title">{story.title}</h1>
-		</a>
-	)
+	if (story === null) {
+		return (
+			<div
+				style={{
+					padding: "2em",
+				}}
+			>
+				<h2>Note:</h2>
+				<p>
+					This News API is expensive for a small project like this, try builing the
+					project locally to view in all it's glory!
+				</p>
+			</div>
+		)
+	} else {
+		return (
+			<a href={story.url} className="top-story">
+				<img className="top-story__img" src={story.urlToImage} alt={story.title} />
+				<h1 className="top-story__title">{story.title}</h1>
+			</a>
+		)
+	}
 }
 
 export default TopStory
