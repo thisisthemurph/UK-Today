@@ -1,4 +1,4 @@
-<div style="display:flex;align-items: center;width: 200px"><img src="/public/logo192.png" alt="logo" width="75px" height="75px"><h1 style="font-size: 1.9rem;margin-left: 0.3em">UK Today</h1></div>
+# UK Today
 
 > A clone of the USA Today news website, with a feed from UK news sources
 
