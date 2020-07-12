@@ -30,7 +30,7 @@ const TopStory: React.FC = () => {
 				<h2>Note:</h2>
 				<p>
 					The News API is expensive for a small project like this, try builing the project
-					locally to view in all its glory! For instructions, please see the MARKDOWN.md
+					locally to view in all its glory! For instructions, please see the README.md
 					file on{" "}
 					<a
 						href="https://github.com/thisisthemurph/UK-Today"
