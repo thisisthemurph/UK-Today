@@ -30,10 +30,7 @@ As the News API is too expensive for this project to run outside of development,
 
 ## UI Screenshots
 
-### Phone
+| Phone                                                 | Tablet                                            |
+|-------------------------------------------------------|---------------------------------------------------|
+| ![iPhone screenshot](/screenshots/uktoday-iphone.png) | ![iPad screenshot](/screenshots/uktoday-ipad.png) |
 
-![iPhone screenshot](/screenshots/uktoday-iphone.png)
-
-### Tablet
-
-![iPad screenshot](/screenshots/uktoday-ipad.png)
