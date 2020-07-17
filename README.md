@@ -26,7 +26,7 @@ As the News API is too expensive for this project to run outside of development,
 ```
 
 -   Run `npm install` and `npm run start`
--   The site will be hosted at [http:localhost:3000](http://localhost:3000)
+-   The site will be hosted at [http://localhost:3000](http://localhost:3000)
 
 ## UI Screenshots
 
